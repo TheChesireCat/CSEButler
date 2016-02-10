@@ -1,6 +1,7 @@
 var token = '181307459:AAEsXdg9_GNTTEwyP_pZtGTKhXL6fCKne84'
 var Bot = require('node-telegram-bot-api'),
     bot;
+var BASE_URL = "https://csebutler.herokuapp.com"
 
 if(process.env.NODE_ENV ==='production'){
   bot = new Bot(token);
