@@ -12,7 +12,7 @@ if(process.env.NODE_ENV ==='production'){
 
 console.log('bot server started...');
 
-bot.onText(/^\/invite-link$/,function(msg){
+bot.onText(/^\/invite$/,function(msg){
   bot.sendMessage(msg.chat.id,'invite link for this group is : https://telegram.me/joinchat/ACZESjxi8y7an1ZcAdpBpA').then(function(){});
 });
 
