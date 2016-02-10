@@ -7,13 +7,13 @@ var bodyParser = require('body-parser');
 var token = '181307459:AAEsXdg9_GNTTEwyP_pZtGTKhXL6fCKne84'
 var Bot = require('node-telegram-bot-api'),
     bot;
-var BASE_URL = "https://csebutler.herokuapp.com"
+var BASE_URL = "https://csebutler.herokuapp.com/"
 
 var app= express();
 
 if(process.env.NODE_ENV ==='production'){
   bot = new Bot(token);
-  bot.setWebHook(BASE_URL + bot.token);
+  bot.setWebHook(BASE_URL + token);
   console.log('WebHook :)');
 
 } else {
