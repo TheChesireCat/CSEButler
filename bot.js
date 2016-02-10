@@ -6,8 +6,11 @@ var BASE_URL = "https://csebutler.herokuapp.com"
 if(process.env.NODE_ENV ==='production'){
   bot = new Bot(token);
   bot.setWebHook(BASE_URL + bot.token);
+  console.log('WebHook :)');
+
 } else {
   bot = new Bot(token,{polling:true});
+  console.log('Polling :(');
 }
 
 console.log('bot server started...');
