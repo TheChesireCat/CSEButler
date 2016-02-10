@@ -7,7 +7,7 @@ var app= express();
 app.use(bodyParser.json());
 
 app.get('/',function(req,res){
-  res.json({version:packageInfo.version});
+  res.send(packageInfo.version);
 });
 
 var server = app.listen(process.env.PORT,function(){
