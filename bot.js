@@ -37,7 +37,7 @@ var server = app.listen(process.env.PORT,function(){
 app.use(bodyParser.json());
 app.get('/',function(req,res){
   console.log("get request!")
-  res.json({version : packageInfo.version});
+  res.json({name: packageInfo.name, version : packageInfo.version});
 });
 app.post('/' + token,function(req,res){
   console.log(req.body);
