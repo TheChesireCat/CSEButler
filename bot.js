@@ -24,7 +24,7 @@ if(process.env.NODE_ENV ==='production'){
 console.log('bot server started...');
 
 bot.onText(/^\/invite.*$/,function(msg){
-  bot.sendMessage(msg.from.id,'Hey '+msg.from.first_name+'! the invite link for this group is : https://telegram.me/joinchat/ACZESjxi8y7an1ZcAdpBpA').then(function(){});
+  bot.sendMessage(msg.chat.id,'Hey '+msg.from.first_name+'! the invite link for the CSE supergroup is : https://telegram.me/joinchat/ACZESjxi8y7an1ZcAdpBpA').then(function(){});
 });
 
 var server = app.listen(process.env.PORT,function(){
