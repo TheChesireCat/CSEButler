@@ -18,7 +18,7 @@ if(process.env.NODE_ENV ==='production'){
 
 } else {
   bot = new Bot(token,{polling:true});
-  console.log('Polling :(');
+  console.log('Polling :)');
 }
 
 console.log('bot server started...');
